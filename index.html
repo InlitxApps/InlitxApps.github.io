@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inlitx Apps — Free and open source apps</title>
+  <meta name="description" content="Inlitx Apps makes free and open source apps that hold their own against anything you would pay for. No account, no ads, nothing leaving your device. Streak and GymMane." />
+  <meta name="theme-color" content="#08080A" />
+  <meta property="og:title" content="Inlitx Apps — You already have the full version" />
+  <meta property="og:description" content="Free and open source apps that hold their own against anything you would pay for." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/apps/streak.png" />
+  <link rel="icon" type="image/svg+xml" href="assets/mark.svg" />
+  <style>html{background:#08080A}body{margin:0;color:#F4F4F6}img{max-width:100%;display:block}</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="veil" aria-hidden="true"></div>
+  <svg class="spot" viewBox="0 0 3787 2842" fill="none" aria-hidden="true">
+    <g filter="url(#spotblur)">
+      <ellipse cx="1924.71" cy="273.501" rx="1924.71" ry="273.501"
+        transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
+        fill="rgba(226,238,252,.62)" fill-opacity="0.19"></ellipse>
+    </g>
+    <defs>
+      <filter id="spotblur" x="0.86" y="0.84" width="3785.16" height="2840.26"
+        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="bg"></feFlood>
+        <feBlend mode="normal" in="SourceGraphic" in2="bg" result="shape"></feBlend>
+        <feGaussianBlur stdDeviation="151" result="blur"></feGaussianBlur>
+      </filter>
+    </defs>
+  </svg>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="dotfield" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__brand" href="#top">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+        <defs>
+          <radialGradient id="mk" cx="38%" cy="30%" r="72%">
+            <stop offset="0" stop-color="#FFFFFF"></stop>
+            <stop offset="0.55" stop-color="#DCE7F3"></stop>
+            <stop offset="1" stop-color="#7E8CA0"></stop>
+          </radialGradient>
+        </defs>
+        <circle cx="12" cy="12" r="10" fill="none" stroke="url(#mk)" stroke-width="1.5" opacity=".45"></circle>
+        <circle cx="12" cy="12" r="4.6" fill="url(#mk)"></circle>
+      </svg>
+      <span>Inlitx Apps</span>
+    </a>
+    <nav class="bar__nav">
+      <a href="#apps" data-i18n="nv1">Apps</a>
+      <a href="#why" data-i18n="nv2">Why</a>
+      <a href="#support" data-i18n="nv3">Support</a>
+    </nav>
+    <div class="bar__right">
+      <button class="lang" id="lang" type="button" aria-label="Switch language">
+        <span class="is-on" data-lang="en">EN</span><i>/</i><span data-lang="es">ES</span>
+      </button>
+      <a class="ghost" href="https://github.com/InlitxApps" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <span class="pillwrap reveal">
+        <a class="pill" href="#why">
+          <svg class="spark" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 2.6l1.7 5.1 5.1 1.7-5.1 1.7L12 16.2l-1.7-5.1-5.1-1.7 5.1-1.7L12 2.6zM19 15l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8L19 15zM5 14l.6 1.7 1.7.6-1.7.6L5 18.6l-.6-1.7-1.7-.6 1.7-.6L5 14z"/></svg>
+          <span data-i18n="pill">Built in the open, one app at a time</span>
+          <b class="pill__tag"><span data-i18n="pilltag">The story</span> <svg viewBox="0 0 16 10" width="13" height="9" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></b>
+        </a>
+      </span>
+
+      <h1 class="reveal">
+        <span data-i18n="h1a">You already have</span><br />
+        <span class="lit" data-i18n="h1b">the full version.</span>
+      </h1>
+
+      <p class="lede reveal" data-i18n="lede">Inlitx Apps makes free and open source apps that hold their own against anything you would pay for. No account to create, no ads, nothing leaving your device, and no paid tier waiting further in.</p>
+
+      <div class="cta reveal">
+        <a class="btn btn--go" href="#apps">
+          <span data-i18n="cta1">See the apps</span>
+          <svg viewBox="0 0 16 10" width="15" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--alt" href="https://github.com/InlitxApps" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          <span data-i18n="cta2">View the code</span>
+        </a>
+      </div>
+
+      <div class="counts reveal">
+        <div class="count">
+          <span class="count__ic count__ic--dl">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M10.15 2.7a1.85 1.85 0 0 1 3.7 0v7.4l2.3-2.3a1.85 1.85 0 0 1 2.62 2.62l-5.26 5.26a1.85 1.85 0 0 1-2.62 0L5.63 10.42A1.85 1.85 0 0 1 8.25 7.8l2.3 2.3V2.7Z"/><rect x="3.2" y="17.9" width="17.6" height="3.7" rx="1.85"/></svg>
+          </span>
+          <span>
+            <b class="count__n" data-count="downloads">5,442</b>
+            <span class="count__l" data-i18n="c1">total downloads</span>
+          </span>
+        </div>
+        <div class="count">
+          <span class="count__ic count__ic--star">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 2.4l2.95 5.98 6.6.96-4.78 4.65 1.13 6.57L12 17.46l-5.9 3.1 1.13-6.57L2.45 9.34l6.6-.96L12 2.4Z"/></svg>
+          </span>
+          <span>
+            <b class="count__n" data-count="stars">353</b>
+            <span class="count__l" data-i18n="c2">stars on GitHub</span>
+          </span>
+        </div>
+        <div class="count">
+          <span class="count__apps">
+            <img src="assets/apps/streak.png" width="34" height="34" alt="" />
+            <img src="assets/apps/gymmane.png" width="34" height="34" alt="" />
+          </span>
+          <span>
+            <b class="count__n">2</b>
+            <span class="count__l" data-i18n="c3">apps, all free</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="stage reveal">
+        <div class="duo">
+          <img class="mk mk--l" src="https://cdn.jsdelivr.net/gh/InlitX/GymMane@main/docs/screenshots/mock/01-home.png" alt="GymMane home screen" width="700" height="1400" loading="lazy" decoding="async" />
+          <img class="mk mk--r" src="https://cdn.jsdelivr.net/gh/InlitX/streak@web/assets/mock/hero-c.png" alt="Streak focus session" width="900" height="1800" loading="lazy" decoding="async" />
+          <span class="tagchip tagchip--1">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="tc1">No account, ever</span>
+          </span>
+          <span class="tagchip tagchip--2">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6z"/></svg>
+            <span data-i18n="tc2">No ads, no tracking</span>
+          </span>
+          <span class="tagchip tagchip--3">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6M15 6l6 6-6 6"/></svg>
+            <span data-i18n="tc3">Every line readable</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="apps">
+      <span class="tag reveal">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M6 7l1.2 12.2A2 2 0 0 0 9.2 21h5.6a2 2 0 0 0 2-1.8L18 7"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+        <span data-i18n="tag1">The apps</span>
+      </span>
+      <h2 class="reveal">
+        <span data-i18n="h2a">Two apps.</span><br />
+        <span data-i18n="h2b">Both entirely yours.</span>
+      </h2>
+      <p class="sub reveal" data-i18n="sub1">Free downloads, no store account, no sign-in. Every build comes straight from the repository that made it, with the source right beside it.</p>
+
+      <div class="apps">
+
+        <article class="app reveal" style="--tint:139,92,246">
+          <div class="app__top">
+            <span class="app__icon">
+              <img src="assets/apps/streak.png" width="76" height="76" alt="Streak" />
+            </span>
+            <div class="app__id">
+              <h3>Streak</h3>
+              <p class="app__cat" data-i18n="a1cat">Productivity · Habit tracker</p>
+              <div class="app__plat">
+                <span class="pl">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.87 3.23a11.4 11.4 0 0 0-9.74 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52M7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5m10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5"/></svg>
+                  Android
+                </span>
+                <span class="pl">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M3 5.9 10.2 4.9v6.6H3zM11.2 4.7 21 3.3v8.2h-9.8zM3 12.5h7.2v6.6L3 18.1zM11.2 12.5H21v8.2l-9.8-1.4z"/></svg>
+                  Windows
+                </span>
+              </div>
+            </div>
+            <div class="app__go">
+              <a class="btn btn--go" href="https://github.com/InlitX/streak/releases/latest" target="_blank" rel="noopener">
+                <span data-i18n="get">Get</span>
+                <svg viewBox="0 0 16 10" width="14" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <span class="app__price" data-i18n="free">Free · no in-app purchases</span>
+            </div>
+          </div>
+
+          <p class="app__say" data-i18n="a1say">Log a habit in a single tap and watch a whole year fill in. Streaks, a focus timer with pomodoro rounds, statistics that actually tell you something, three complete designs, and an island that grows a little every time you show up.</p>
+
+          <dl class="app__meta">
+            <div><dt data-i18n="m1">Version</dt><dd data-fill="streak-version">v1.8.0</dd></div>
+            <div><dt data-i18n="m2">Size</dt><dd data-fill="streak-size">35 MB</dd></div>
+            <div><dt data-i18n="m3">Downloads</dt><dd data-count="streak-downloads">5,251</dd></div>
+            <div><dt data-i18n="m4">Stars</dt><dd data-count="streak-stars">277</dd></div>
+            <div><dt data-i18n="m5">License</dt><dd>GPL-3.0</dd></div>
+            <div><dt data-i18n="m6">Requires</dt><dd>Android 7+</dd></div>
+          </dl>
+
+          <div class="shots" data-shots="streak"></div>
+
+          <div class="app__foot">
+            <span class="app__from" data-i18n="from">Available from</span>
+            <div class="app__links">
+              <a href="https://github.com/InlitX/streak/releases/latest" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://f-droid.org/packages/com.streak.app/" target="_blank" rel="noopener">F-Droid</a>
+              <a href="https://apt.izzysoft.de/fdroid/index/apk/com.streak.app?repo=main" target="_blank" rel="noopener">IzzyOnDroid</a>
+              <a href="https://www.openapk.net/streak/com.streak.app/" target="_blank" rel="noopener">OpenAPK</a>
+              <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.streak.app%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FInlitX%2Fstreak%22%2C%22author%22%3A%22InlitX%22%2C%22name%22%3A%22Streak%22%2C%22preferredApkIndex%22%3A0%7D" target="_blank" rel="noopener">Obtainium</a>
+              <a href="https://github.com/InlitX/streak" target="_blank" rel="noopener" data-i18n="src">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="app reveal" style="--tint:217,161,132">
+          <div class="app__top">
+            <span class="app__icon">
+              <img src="assets/apps/gymmane.png" width="76" height="76" alt="GymMane" />
+            </span>
+            <div class="app__id">
+              <h3>GymMane</h3>
+              <p class="app__cat" data-i18n="a2cat">Health &amp; fitness · Gym log</p>
+              <div class="app__plat">
+                <span class="pl">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.4.4 0 0 0-.7-.4l-1.87 3.23a11.4 11.4 0 0 0-9.74 0L5.26 5.9a.4.4 0 1 0-.7.4L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52M7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5m10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5"/></svg>
+                  Android
+                </span>
+              </div>
+            </div>
+            <div class="app__go">
+              <a class="btn btn--go" href="https://github.com/InlitX/GymMane/releases/latest" target="_blank" rel="noopener">
+                <span data-i18n="get">Get</span>
+                <svg viewBox="0 0 16 10" width="14" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <span class="app__price" data-i18n="free">Free · no in-app purchases</span>
+            </div>
+          </div>
+
+          <p class="app__say" data-i18n="a2say">Tap the muscles you want to train on a real body map, log reps and weight set by set, and rest with an alarm that actually gets your attention. Progress comes from your own sets, not from a chart someone sold you.</p>
+
+          <dl class="app__meta">
+            <div><dt data-i18n="m1">Version</dt><dd data-fill="gymmane-version">v1.0.0</dd></div>
+            <div><dt data-i18n="m2">Size</dt><dd data-fill="gymmane-size">31 MB</dd></div>
+            <div><dt data-i18n="m3">Downloads</dt><dd data-count="gymmane-downloads">191</dd></div>
+            <div><dt data-i18n="m4">Stars</dt><dd data-count="gymmane-stars">76</dd></div>
+            <div><dt data-i18n="m5">License</dt><dd>GPL-3.0</dd></div>
+            <div><dt data-i18n="m6">Requires</dt><dd>Android 7+</dd></div>
+          </dl>
+
+          <div class="shots" data-shots="gymmane"></div>
+
+          <div class="app__foot">
+            <span class="app__from" data-i18n="from">Available from</span>
+            <div class="app__links">
+              <a href="https://github.com/InlitX/GymMane/releases/latest" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/InlitX/GymMane" target="_blank" rel="noopener" data-i18n="src">Source</a>
+              <span class="app__soon" data-i18n="soon">More stores soon</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="sec" id="why">
+      <div class="story reveal">
+        <div class="story__txt">
+          <h2 data-i18n="st1">We got tired of choosing between apps that feel good and apps that respect us.</h2>
+          <p data-i18n="st2">Every app worth using ends the same way. A paywall halfway through what you were already doing. A subscription for something that was free last year. An account you never asked for. An ad in the middle of your morning.</p>
+          <p data-i18n="st3">The free alternatives were out there, and most of them looked like alternatives. Rough edges, tired layouts, good intentions from someone with no time left over for the details. Freedom should not cost you the feeling of using something good.</p>
+          <p class="story__small" data-i18n="st4">So Inlitx Apps exists to build the other option. The motion, the typography, the empty states, the thousand small decisions nobody notices until they are missing — put into software that is free, offline, private and open. Permanently, and for everyone.</p>
+          <p class="story__small" data-i18n="st6">There is no company behind this. No investors, no growth plan, no quiet intention to sell you something later. One person, a couple of apps, and the time to do them properly.</p>
+          <p class="story__quote" data-i18n="st5">If it is not good enough to sell, it is not good enough to give away.</p>
+        </div>
+        <div class="story__art">
+          <img class="mk mk--a" src="https://cdn.jsdelivr.net/gh/InlitX/streak@web/assets/mock/b1-a.png" alt="Streak habit detail" width="700" height="1400" loading="lazy" decoding="async" />
+          <img class="mk mk--b" src="https://cdn.jsdelivr.net/gh/InlitX/GymMane@main/docs/screenshots/mock/04-session.png" alt="GymMane live session" width="700" height="1400" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <span class="tag reveal">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6z"/></svg>
+        <span data-i18n="tag2">The rules</span>
+      </span>
+      <h2 class="reveal">
+        <span data-i18n="h3a">Six promises,</span><br />
+        <span data-i18n="h3b">in every app we ship.</span>
+      </h2>
+      <p class="sub reveal" data-i18n="sub2">Not a marketing page. These are the constraints we design inside, and the reason some features never make it in.</p>
+
+      <div class="rail">
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 20.5 21M3.6 9.2A15 15 0 0 1 8.1 6.5m8.1-.1a15 15 0 0 1 4.2 2.6M6.6 12.6a9.6 9.6 0 0 1 3-1.8m4.5.1a9.6 9.6 0 0 1 2.8 1.7M9.6 15.9a5 5 0 0 1 4.8 0M12 19.4h.01"/></svg></span>
+          <b data-i18n="p1t">Offline by default</b>
+          <span data-i18n="p1b">If an app can work without the network, it works without it completely. The few that genuinely need it will say so, and use it only for that.</span>
+        </div>
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20a8 8 0 0 1 16 0"/><circle cx="12" cy="8" r="4"/><path d="m3 3 18 18"/></svg></span>
+          <b data-i18n="p2t">No accounts</b>
+          <span data-i18n="p2b">Open it and it is already yours. No email, no password, no profile to abandon later.</span>
+        </div>
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 20.5 21M10.6 6.2A9.7 9.7 0 0 1 12 6.1c5 0 9 4.4 9 5.9a12 12 0 0 1-2.3 3.2M6.7 6.9A12.3 12.3 0 0 0 3 12c0 1.5 4 5.9 9 5.9a9.5 9.5 0 0 0 3.3-.6M9.9 9.9a3 3 0 0 0 4.2 4.2"/></svg></span>
+          <b data-i18n="p3t">No ads, no tracking</b>
+          <span data-i18n="p3b">No analytics, no telemetry, no third-party SDKs. Nothing about you leaves the device.</span>
+        </div>
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6M15 6l6 6-6 6"/></svg></span>
+          <b data-i18n="p4t">Open source</b>
+          <span data-i18n="p4b">Every line is readable, auditable and forkable. Trust you can verify, not trust you are asked for.</span>
+        </div>
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12.2V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7.8M2.6 8.2h18.8v4H2.6zM12 21V8.2M12 8.2H7.7a2.6 2.6 0 0 1 0-5.2C11.3 3 12 8.2 12 8.2Zm0 0h4.3a2.6 2.6 0 0 0 0-5.2C12.7 3 12 8.2 12 8.2Z"/></svg></span>
+          <b data-i18n="p5t">Free, forever</b>
+          <span data-i18n="p5b">No trial, no tiers, no pro. The complete app from the first launch, for everyone.</span>
+        </div>
+        <div class="chip">
+          <span class="chip__ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4.5M16 16.5l5-4.5-5-4.5M21 12H9.5"/></svg></span>
+          <b data-i18n="p6t">Built to be left</b>
+          <span data-i18n="p6b">Your data exports in a format you own. Leaving is as easy as arriving, and that is on purpose.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="support">
+      <span class="tag reveal">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1l8.8 8.8 8.8-8.8a5 5 0 0 0 0-7.1z"/></svg>
+        <span data-i18n="tag4">Support</span>
+      </span>
+      <h2 class="reveal" data-i18n="h5">Nothing to buy, ever.</h2>
+      <p class="sub reveal" data-i18n="sub4">No paid tier, no subscription, nothing held back. The three below cost you nothing at all, and help more than you would think.</p>
+
+      <div class="help">
+        <a class="hc" href="https://github.com/InlitxApps" target="_blank" rel="noopener">
+          <span class="hc__ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2.4l2.95 5.98 6.6.96-4.78 4.65 1.13 6.57L12 17.46l-5.9 3.1 1.13-6.57L2.45 9.34l6.6-.96L12 2.4Z"/></svg></span>
+          <b data-i18n="s1t">Star what you use</b>
+          <span data-i18n="s1b">Every app lives in the organisation. Pick the one you actually use, since a star is how most people end up finding it.</span>
+          <span class="hc__go"><svg viewBox="0 0 16 10" width="15" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <a class="hc" href="https://github.com/InlitxApps" target="_blank" rel="noopener">
+          <span class="hc__ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg></span>
+          <b data-i18n="s2t">Translate an app</b>
+          <span data-i18n="s2b">Every language in these apps was written by someone who uses them. Open the repository you care about and add yours.</span>
+          <span class="hc__go"><svg viewBox="0 0 16 10" width="15" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <a class="hc" href="https://github.com/InlitxApps" target="_blank" rel="noopener">
+          <span class="hc__ic"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></svg></span>
+          <b data-i18n="s3t">Report what is broken</b>
+          <span data-i18n="s3b">A clear bug report is worth more than most feature requests. Open an issue on the repository it belongs to.</span>
+          <span class="hc__go"><svg viewBox="0 0 16 10" width="15" height="10" aria-hidden="true"><path d="M1 5h11M8.5 1.5 12 5l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </div>
+
+      <div class="give reveal">
+        <div class="give__head">
+          <div class="give__txt">
+            <b data-i18n="gt">These apps will never ask you for anything.</b>
+            <span data-i18n="gb">Not an account, not your attention, not a payment, now or later. Everything they do is yours from the moment you install them. So if one of them has quietly become part of how your days work, whatever comes back is entirely your choice, and a coffee is simply a nicer way of saying thank you.</span>
+          </div>
+          <a class="kofi" href="https://ko-fi.com/inlitx" target="_blank" rel="noopener">
+            <img src="assets/kofi.png" width="287" height="58" alt="Support me on Ko-fi" />
+          </a>
+        </div>
+        <div class="wallets">
+          <span class="wallets__l" data-i18n="wl">Straight to a wallet, if you prefer · tap to copy</span>
+          <div class="wallets__grid">
+            <button type="button" class="wallet" data-copy="bc1qm0r4pg8nknnjh3a7n2t63ckafhsz8jdd6qer29">
+              <img src="assets/crypto/bitcoin.svg" width="18" height="18" alt="" />
+              <span class="wallet__n">Bitcoin</span>
+              <code class="wallet__a">bc1qm0r4pg8nknnjh3a7n2t63ckafhsz8jdd6qer29</code>
+              <span class="wallet__c"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span>
+            </button>
+            <button type="button" class="wallet" data-copy="0x34b7A5552132cBca150Ae29c1E632faA49430e1a">
+              <img src="assets/crypto/ethereum.svg" width="18" height="18" alt="" />
+              <span class="wallet__n">Ethereum</span>
+              <code class="wallet__a">0x34b7A5552132cBca150Ae29c1E632faA49430e1a</code>
+              <span class="wallet__c"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span>
+            </button>
+            <button type="button" class="wallet" data-copy="DC8dNEUNJhWdtBHBZAn4FTheVC3W4PtkGhbazvtk17Jo">
+              <img src="assets/crypto/solana.svg" width="18" height="18" alt="" />
+              <span class="wallet__n">Solana</span>
+              <code class="wallet__a">DC8dNEUNJhWdtBHBZAn4FTheVC3W4PtkGhbazvtk17Jo</code>
+              <span class="wallet__c"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span>
+            </button>
+            <button type="button" class="wallet" data-copy="44SECMEf3rfV228kpy3Gs48wLmLXnq231gAMG7ULYoCWBWLYLHdwYV7YFkhMk31DR5P7SRAyRPyhkYaehtgEoajASz7qubq">
+              <img src="assets/crypto/monero.svg" width="18" height="18" alt="" />
+              <span class="wallet__n">Monero</span>
+              <code class="wallet__a">44SECMEf3rfV228kpy3Gs48wLmLXnq231gAMG7ULYoCWBWLYLHdwYV7YFkhMk31DR5P7SRAyRPyhkYaehtgEoajASz7qubq</code>
+              <span class="wallet__c"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></svg></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <a class="foot__l" href="#top">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="url(#mk)" stroke-width="1.5" opacity=".45"></circle>
+        <circle cx="12" cy="12" r="4.6" fill="url(#mk)"></circle>
+      </svg>
+      <span>Inlitx Apps</span>
+    </a>
+    <nav class="foot__n">
+      <a href="#apps" data-i18n="nv1">Apps</a>
+      <a href="#why" data-i18n="nv2">Why</a>
+      <a href="#support" data-i18n="nv3">Support</a>
+      <a href="https://github.com/InlitxApps" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+    <p class="foot__c">
+      <span data-i18n="fc">Made with care and given away, by</span>
+      <a href="https://github.com/InlitX" target="_blank" rel="noopener">InlitX</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
